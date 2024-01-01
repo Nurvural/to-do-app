@@ -42,8 +42,11 @@ function TaskItem({
               onChange={() => toggleCheck(task.taskName)}
             />
             <p className={task.checked ? "isChecked" : ""}>{task.taskName}</p>
-            <p className={task.checked ? "isChecked" : ""}>{task.date}</p>
-          
+            {task.date && (
+              <span className={task.checked ? "isChecked" : ""}>
+                {task.date.toLocaleString()}
+              </span>
+            )}
           </>
         )}
       </div>

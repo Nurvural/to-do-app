@@ -50,18 +50,18 @@ function TaskApp() {
     setToDoList((prevToDolist) =>
       prevToDolist.map((task) =>
         task.taskName === oldTaskName
-          ? { ...task, taskName: newTaskName }
+          ? { ...task, taskName: newTaskName, date: new Date() }
           : task
       )
     );
-    setEditingTask(null);
+    setEditingTask();
     setTaskChangeCount((prev) => prev + 1);
   };
 
   return (
     <>
       <div className="container">
-        <h1>To Do App</h1>
+        <h1>Todo-List</h1>
         <TaskInput addTask={addTask} setTaskChangeCount={setTaskChangeCount} />
         <div className="toDoList">
           <span>To Do</span>
