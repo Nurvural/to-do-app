@@ -96,7 +96,7 @@ button:hover {
   justify-content: 
   space-between;
   color: rgb(186, 186, 186);
-  width: 100%; /* İtem container'ının genişliğini belirleyin */
+  width: 100%; 
   max-width: 100%;
 }
 input[type='checkbox'] {
@@ -113,13 +113,13 @@ input[type='checkbox'] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 400px; /* Kırpma için maksimum genişlik */
-  transition: max-width 0.5s ease; /* Animasyon eklemek için */
+  max-width: 400px; 
+  transition: max-width 0.5s ease; 
 }
 
 .items-text:hover p {
-  max-width: none; /* Hover durumunda maksimum genişlik sınırlamasını kaldır */
-  white-space: normal; /* Metni kırpmadan tamamını göster */
+  max-width: none; 
+  white-space: normal; 
 }
 .items-text div {
   color: rgb(180, 132, 132);
@@ -182,7 +182,7 @@ input[type='checkbox'] {
   padding: 10px;
   background: #282851;
 }
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .container {
     width: 90%;
     padding: 1rem;
@@ -198,6 +198,6 @@ input[type='checkbox'] {
   }
 
   .edit-input {
-    width: 100%;
+    width: 90%;
   }
 }
